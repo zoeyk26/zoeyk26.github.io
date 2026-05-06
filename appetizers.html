@@ -10,7 +10,7 @@
 	}
 	.container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   justify-items: center;
   align-items: center;
   padding: 3px;
@@ -68,11 +68,57 @@
   opacity: 1;
 }
 
+.topnav {
+   background-color: #333333;
+   overflow: hidden;
+}
+.topnav {
+   background-color: lightblue;
+   overflow: hidden;
+}
+
+.topnav a {
+   float: left;
+   color: #f2f2f2;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 17px;
+}
+
+.topnav a:hover {
+   background-color: hotpink;
+   color: black;
+}
+
+.topnav a.active {
+   background-color: lightpink;
+   color: #FAF9F6;
+}
+.header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
 </style>
 <title>Appetizers</title>
 </head>
 <body>
-<h1>Appetizers</h1>
+	<div class="topnav">
+	<a href="index.html">Home</a>
+	<a href="breakfast.html">Breakfast</a>
+	<a href="drinks.html">Drinks</a>
+	<a href="salads.html">Salads</a>
+	<a href="appetizers.html" class="active">Appetizers</a>
+	<a href="entrees.html">Entrees</a>
+	<a href="desserts.html">Desserts</a>
+</div>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<div class="header">
+	<h1>Appetizers</h1>
+</div>
+
 <div class="container">
 	<div class="image">
   <a href="swedishmeatballs.html">
@@ -82,28 +128,70 @@
     </div>
   </a>
 </div>
-<div><img src="zucchinipie.jpeg" alt="Zucchini Pie on Quiche"/></div>
-<div><img src="guacamole.jpeg" alt="Guacamole"/></div>
-<div><img src="cheesespread.jpeg" alt="Fiesta Cheese Spread"/></div>
-<div><img src="portobellomushrooms.jpeg" alt="Grilled Portobello Mushrooms"/></div>
-<div><img src="blackbeandip.jpeg" alt="Black Bean Dip"/></div>
-<div><img src="applesaucecake.jpeg" alt="Applesauce Cake"/></div>
-<div><img src="bakedbeans.jpeg" alt="Baked Beans"/></div>
-<div><img src="Barley.jpg" alt="Barley with Mushrooms"/></div>
+<div class="image">
+  <a href="zucchini.html">
+    <img src="zucchinipie.jpeg" alt="Zucchini Pie on Quiche">
+    <div class="overlay">
+      <div class="title">Zucchini Pie<br>on Quiche</div>
+    </div>
+  </a>
 </div>
-
-<ul>
-	<li><a href="swedishmeatballs.html">Nana's Sweet and Sour Meatballs</a></li>
-	<li><a href="zucchini.html">Jaren's Zucchini Pie on Quiche</a></li>
-	<li><a href="guacamole.html">Alana's Guacamole</a></li>
-	<li><a href="cheesespread.html">Sue's Fiesta Cheese Spread</a></li>
-	<li><a href="portobellomushrooms.html">Lauri's Grilled Portobello Mushrooms</a></li>
-	<li><a href="blackbeandip.html">Anu and Serena's Black Bean Dip</a></li>
-	<li><a href="applesaucecake.html">Anu and Serena's Applesauce Cake</a></li>
-	<li>Jenn's Baked Beans</li>
-	<li><a href="barley.html">Elena's Barley with Mushrooms</a></li>
-</ul>
-<a href="index.html">Home</a>
+<div class="image">
+  <a href="guacamole.html">
+    <img src="guacamole.jpeg" alt="Guacamole">
+    <div class="overlay">
+      <div class="title">Guacamole</div>
+    </div>
+  </a>
+</div>
+<div class="image">
+  <a href="cheesespread.html">
+    <img src="cheesespread.jpeg" alt="Fiesta Cheese Spread">
+    <div class="overlay">
+      <div class="title">Fiesta<br>Cheese Spread</div>
+    </div>
+  </a>
+</div>
+<div class="image">
+  <a href="portobellomushrooms.html">
+    <img src="portobellomushrooms.jpeg" alt="Grilled Portobello Mushrooms">
+    <div class="overlay">
+      <div class="title">Grilled<br>Portobello Mushrooms</div>
+    </div>
+  </a>
+</div>
+<div class="image">
+  <a href="blackbeandip.html">
+    <img src="blackbeandip.jpeg" alt="Black Bean Dip">
+    <div class="overlay">
+      <div class="title">Black<br>Bean Dip</div>
+    </div>
+  </a>
+</div>
+<div class="image">
+  <a href="applesaucecake.html">
+    <img src="applesaucecake.jpeg" alt="Applesauce Cake">
+    <div class="overlay">
+      <div class="title">Applesauce<br>Cake</div>
+    </div>
+  </a>
+</div>
+<div class="image">
+  <a href="barley.html">
+    <img src="Barley.jpg" alt="Barley with Mushrooms">
+    <div class="overlay">
+      <div class="title">Barley with<br>Mushrooms</div>
+    </div>
+  </a>
+</div>
+<div class="image">
+  <a href="bakedBeans.html">
+    <img src="bakedbeans.jpeg" alt="Baked Beans">
+    <div class="overlay">
+      <div class="title">Baked<br>Beans</div>
+    </div>
+  </a>
+</div>
 
 </body>
 </html>

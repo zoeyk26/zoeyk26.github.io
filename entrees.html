@@ -8,39 +8,223 @@
 	h1 {
 		background-color:lightblue;
 	}
+	.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  padding: 3px;
+}
+
+.container div {
+  padding: 10px;
+  margin: 5px;
+}
+	.topnav {
+   background-color: #333333;
+   overflow: hidden;
+}
+.topnav {
+   background-color: lightblue;
+   overflow: hidden;
+}
+
+.topnav a {
+   float: left;
+   color: #f2f2f2;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 17px;
+}
+
+.topnav a:hover {
+   background-color: hotpink;
+   color: black;
+}
+
+.topnav a.active {
+   background-color: lightpink;
+   color: #FAF9F6;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  padding: 3px;
+}
+
+.container div {
+  padding: 10px;
+  margin: 5px;
+}
+.image {
+  position: relative;
+  width: 200px;
+}
+
+/* Make entire area clickable */
+.image a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.image img {
+  width: 100%;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+/* Overlay tint */
+.overlay {
+   position: absolute;
+  inset: 0; /* same as top:0; left:0; right:0; bottom:0 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Text box */
+.title {
+  background-color: #CBC3E3;
+  color: black;
+  padding: 10px 20px;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 0; /* square corners */
+}
+
+/* Hover effects */
+.image:hover img {
+  opacity: 0.6;
+}
+
+.image:hover .overlay {
+  opacity: 1;
+}
+.header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
 	</style>
 	<title>Entrees</title>
 </head>
 <body>
+	<div class="topnav">
+	<a href="index.html">Home</a>
+	<a href="breakfast.html">Breakfast</a>
+	<a href="drinks.html">Drinks</a>
+	<a href="salads.html">Salads</a>
+	<a href="appetizers.html">Appetizers</a>
+	<a href="entrees.html" class="active">Entrees</a>
+	<a href="desserts.html">Desserts</a>
+</div>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<div class="header">
 	<h1>Entrees</h1>
-<img src="Brisket.jpg" alt="Nana's Brisket"/>
-<img src="sesamechicken.jpeg" alt="Sesame Chicken"/>
-<img src="turkeychili.jpeg" alt="Turkey Chicken"/>
-<img src="pennealavodka.jpeg" alt="Penne Ala Vodka"/>
-<img src="chickenwithmushrooms.jpeg" alt="Chicken With Mushrooms"/>
-<img src="gingerseabass.jpeg" alt="Ginger Sea Bass over Wilted Greens"/>
-<img src="pecancrustedchicken.jpeg" alt="Pecan Crusted Chicken"/>
-<img src="parmesanchicken.jpeg" alt="Parmesan Chicken with Balsamic Sauce"/>
-<img src="chickencasserole.jpeg" alt="Casserole Baked Chicken"/>
-<img src="hamburger.jpeg" alt="Hamburgers"/>
-<img src="bakedziti.jpeg" alt="Baked Ziti"/>
-<img src="squashsouffle.jpeg" alt="Squash Souffle"/>
-<img src="burrito.jpeg" alt="Burritos"/>
-<ul>
-	<li><a href="brisket.html">Nana's Brisket</a></li>
-	<li><a href="sesamechicken.html">Aunt Sue's Sesame Chicken</a></li>
-	<li><a href="turkeychili.html">Aunt Sharon's Turkey Chili</a></li>
-	<li><a href="pennealavodka.html">Jen's Penne Ala Vodka</a></li>
-	<li><a href="chickenwmushrooms.html">The Berk's Chicken with Mushrooms</li>
-	<li><a href="seabass.html">Sandi's Ginger Sea Bass over Wilted Greens</a></li>
-	<li><a href="pecancrustedchicken.html">Joy's Pecan Crusted Chicken</a></li>
-	<li><a href="parmesanchicken.html">The Lupow's Parmesan Chicken with Balsamic Sauce</a></li>
-	<li>Sherry's Casserole Baked Chicken</li>
-	<li>Nana's Hamburgers</li>
-	<li>Nana's Baked Ziti</li>
-	<li>Mima's Squash Souffle</li>
-	<li>Allyson's Burritos</li>
-</ul>
-<a href="index.html">Home</a>
+</div>
+	<div class="container">
+
+  <div class="image">
+    <a href="brisket.html">
+      <img src="Brisket.jpg" alt="Brisket">
+      <div class="overlay"><div class="title">Brisket</div></div>
+    </a>
+  </div>
+
+<div class="image">
+   <a href="sesamechicken.html">
+      <img src="sesamechicken.jpeg" alt="Sesame Chicken">
+      <div class="overlay"><div class="title">Sesame<br>Chicken</div></div>
+    </a>
+  </div>
+
+<div class="image">
+   <a href="turkeychili.html">
+      <img src="turkeychili.jpeg" alt="Turkey Chili">
+      <div class="overlay"><div class="title">Turkey<br>Chili</div></div>
+    </a>
+  </div>
+
+  <div class="image">
+   <a href="pennealavodka.html">
+      <img src="pennealavodka.jpeg" alt="Penne Ala Vodka">
+      <div class="overlay"><div class="title">Penne<br>Ala Vodka</div></div>
+    </a>
+  </div>
+
+  <div class="image">
+   <a href="chickenwmushrooms.html">
+      <img src="chickenwithmushrooms.jpeg" alt="Chicken With Mushrooms">
+      <div class="overlay"><div class="title">Chicken<br>With Mushrooms</div></div>
+    </a>
+  </div>
+
+  <div class="image">
+   <a href="seabass.html">
+      <img src="gingerseabass.jpeg" alt="Ginger Sea Bass over Wilted Greens">
+      <div class="overlay"><div class="title">Ginger<br>Sea Bass</div></div>
+    </a>
+  </div>
+
+  <div class="image">
+   <a href="pecancrustedchicken.html">
+      <img src="pecancrustedchicken.jpeg" alt="Pecan Crusted Chicken">
+      <div class="overlay"><div class="title">Pecan<br>Crusted Chicken</div></div>
+    </a>
+  </div>
+
+  <div class="image">
+   <a href="parmesanchicken.html">
+      <img src="parmesanchicken.jpeg" alt="Parmesan Chicken with Balsamic Sauce">
+      <div class="overlay"><div class="title">Parmesan<br>Chicken</div></div>
+    </a>
+  </div>
+
+  <div class="image">
+   <a href="casseroleChicken.html">
+      <img src="chickencasserole.jpeg" alt="Casserole Barbeque Chicken">
+      <div class="overlay"><div class="title">Casserole<br>Chicken</div></div>
+    </a>
+  </div>
+
+  <div class="image">
+   <a href="hamburgers.html">
+      <img src="hamburger.jpeg" alt="Hamburgers">
+      <div class="overlay"><div class="title">Hamburgers</div></div>
+    </a>
+  </div>
+
+  <div class="image">
+   <a href="bakedZiti.html">
+      <img src="bakedziti.jpeg" alt="Baked Ziti">
+      <div class="overlay"><div class="title">Baked<br>Ziti</div></div>
+    </a>
+  </div>
+
+<div class="image">
+   <a href="squashSouffle.html">
+      <img src="squashsouffle.jpeg" alt="Squash Souffle">
+      <div class="overlay"><div class="title">Squash<br>Souffle</div></div>
+    </a>
+  </div>
+
+<div class="image">
+   <a href="taco.html">
+      <img src="burrito.jpeg" alt="Burritos/Tacos">
+      <div class="overlay"><div class="title">Burritos<br>/Tacos</div></div>
+    </a>
+  </div>
+
+</div>
+</div>
+
+
 </body>
 </html>

@@ -7,39 +7,161 @@
 	}
 	.header {
 		background-color:lightblue;
+		font-family:"Arizonia", serif;
 	}
-	.container {
-  display: flex;
-  justify-content: space-evenly;
+	
+.topnav {
+   background-color: #333333;
+   overflow: hidden;
+}
+.topnav {
+   background-color: lightblue;
+   overflow: hidden;
+}
+
+.topnav a {
+   float: left;
+   color: #f2f2f2;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 17px;
+}
+
+.topnav a:hover {
+   background-color: hotpink;
+   color: black;
+}
+
+.topnav a.active {
+   background-color: lightpink;
+   color: #FAF9F6;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  padding: 3px;
 }
 
 .container div {
-  margin: 10px;
   padding: 10px;
+  margin: 5px;
+}
+.image {
+  position: relative;
+  width: 200px;
+}
+
+/* Make entire area clickable */
+.image a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.image img {
+  width: 100%;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+/* Overlay tint */
+.overlay {
+   position: absolute;
+  inset: 0; /* same as top:0; left:0; right:0; bottom:0 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Text box */
+.title {
+  background-color: #CBC3E3;
+  color: black;
+  padding: 10px 20px;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 0; /* square corners */
+}
+
+/* Hover effects */
+.image:hover img {
+  opacity: 0.6;
+}
+
+.image:hover .overlay {
+  opacity: 1;
+}
+.header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  letter-spacing: 1px;
+  margin: 10px 0;
 }
 
 	</style>
 	<title>Salads</title>
 </head>
 <body>
-	<div class=header>
+	<div class="topnav">
+	<a href="index.html">Home</a>
+	<a href="breakfast.html">Breakfast</a>
+	<a href="drinks.html">Drinks</a>
+	<a href="salads.html" class="active">Salads</a>
+	<a href="appetizers.html">Appetizers</a>
+	<a href="entrees.html">Entrees</a>
+	<a href="desserts.html">Desserts</a>
+</div>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<div class="header">
 	<h1>Salads</h1>
 </div>
+
 <div class="container">
-	<div><img src="Israelisalad.jpg" alt="Israeli Salad"/></div>
-	<div><img src="strawberryromainesalad.jpeg" alt="Strawberry/Romaine Salad"/></div>
-	<div><img src="spinachstrawberrysalad.jpeg" alt="Spinach Strawberry Salad"/></div>
-	<div><img src="slaw.jpeg" alt="Slaw"/></div>
-	<div><img src="dressing.jpeg" alt="Caesar Salad Dressing"/></div>
+
+  <div class="image">
+    <a href="israelisalad.html">
+      <img src="Israelisalad.jpg">
+      <div class="overlay"><div class="title">Israeli<br>Salad</div></div>
+    </a>
+  </div>
+
+  <div class="image">
+    <a href="romainesalad.html">
+      <img src="strawberryromainesalad.jpeg">
+      <div class="overlay"><div class="title">Romaine<br>Salad</div></div>
+    </a>
+  </div>
+
+  <div class="image">
+    <a href="spinachsalad.html">
+      <img src="spinachstrawberrysalad.jpeg">
+      <div class="overlay"><div class="title">Spinach<br>Salad</div></div>
+    </a>
+  </div>
+
+  <div class="image">
+    <a href="slaw.html">
+      <img src="slaw.jpeg">
+      <div class="overlay"><div class="title">Slaw</div></div>
+    </a>
+  </div>
+
+  <div class="image">
+    <a href="dressing.html">
+      <img src="dressing.jpeg">
+      <div class="overlay"><div class="title">Caesar<br>Dressing</div></div>
+    </a>
+  </div>
+
 </div>
-<ul>
-	<li><a href="israelisalad.html">Israeli Salad</a></li>
-	<li><a href="romainesalad.html">Sharon's Strawberry/Romaine Salad</a></li>
-	<li><a href="spinachsalad.html">Andrea's Spinach Salad with Strawberries</a></li>
-	<li>Debra's Slaw</li>
-	<li><a href="dressing.html">Rachel's Caesar Salad Dressing</a></li>
-</ul>
-	<a href="index.html">Home</a>
+
+
 
 </body>
 </html>

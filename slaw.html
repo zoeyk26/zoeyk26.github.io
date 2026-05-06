@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	body {
+		background-color:#CBC3E3;
+	}
+	.header{
+  color: black;
+
+  background: 
+    linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
+    url("slaw.jpeg");
+
+  background-size: cover;
+  background-position: center;
+  padding: 15px 0;
+  text-align: center; 
+
+}
+.header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+	.topnav {
+   background-color: #333333;
+   overflow: hidden;
+}
+.topnav {
+   background-color: lightblue;
+   overflow: hidden;
+}
+
+.topnav a {
+   float: left;
+   color: #f2f2f2;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 17px;
+}
+
+.topnav a:hover {
+   background-color: hotpink;
+   color: black;
+}
+
+.topnav a.active {
+   background-color: lightpink;
+   color: #FAF9F6;
+}
+.lists {
+  width: fit-content;
+  margin: 0 auto;  
+}
+
+.lists ul,
+.lists ol {
+  text-align: left; 
+}
+.container {
+  display: grid;
+  grid-template-areas:
+    "table lists"
+    "footer footer";
+  grid-template-columns: auto 1fr;
+  gap: 3px;
+  padding: 5px;
+}
+.container div {
+  padding: 10px;
+}
+.container div.table {
+  grid-area: table;
+  padding-left: 0;
+  background-color:lightpink;
+  border-radius:12px;
+}
+.container div.lists {
+  grid-area: lists;
+  background-color: lightblue;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+}
+.serves-box {
+  display: inline-block;
+  background-color: hotpink;
+  padding: 10px 20px;
+  border-radius: 12px;
+  margin-top: 5px;
+}
+.serves {
+	font-size:18px;
+	font-weight:bold;
+}
+.table {
+	width:200px;
+	margin-left:300px;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+}
+.lists {
+  width: fit-content;
+  margin: 0 auto;  
+}
+
+.lists ul,
+.lists ol {
+  text-align: left; 
+}
+.header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+.recipe-container { 
+	display: flex; 
+	justify-content: center; 
+	gap: 30px; margin: 40px auto; 
+	width: 80%; 
+} 
+.sidebar { 
+	width: 220px; 
+	background-color: lightpink; 
+	padding: 20px; border-radius: 15px; 
+	text-align: center; 
+	box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+} 
+.sidebar h3 { 
+	margin-bottom: 20px; 
+} 
+.info-box { 
+	margin-bottom: 20px; 
+	padding: 10px; 
+	background-color: hotpink; 
+	border-radius: 10px; 
+} 
+.content { 
+	flex: 1; 
+	background-color: lightblue; 
+	padding: 25px; 
+	border-radius: 15px; 
+	box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+} 
+.content ul, 
+.content ol { 
+	padding-left: 20px; 
+} /* mobile */ 
+@media (max-width: 700px) { 
+	.recipe-container { 
+		flex-direction: column; 
+		align-items: center; 
+	} .sidebar { 
+		width: 100%;
+		 } 
+		}
+.header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+.lists {
+  width: fit-content;
+  margin: 0 auto;  
+}
+
+.lists ul,
+.lists ol {
+  text-align: left; 
+}
+.recipe-container { 
+	display: flex; 
+	justify-content: center; 
+	gap: 30px; margin: 40px auto; 
+	width: 80%; 
+} 
+.sidebar { 
+	width: 220px; 
+	background-color: lightpink; 
+	padding: 20px; border-radius: 15px; 
+	text-align: center; 
+	box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+} 
+.sidebar h3 { 
+	margin-bottom: 20px; 
+} 
+.info-box { 
+	margin-bottom: 20px; 
+	padding: 10px; 
+	background-color: hotpink; 
+	border-radius: 10px; 
+} 
+.content { 
+	flex: 1; 
+	background-color: lightblue; 
+	padding: 25px; 
+	border-radius: 15px; 
+	box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+} 
+.content ul, 
+.content ol { 
+	padding-left: 20px; 
+} /* mobile */ 
+@media (max-width: 700px) { 
+	.recipe-container { 
+		flex-direction: column; 
+		align-items: center; 
+	} .sidebar { 
+		width: 100%;
+		 } 
+		}
+</style>
+	<title>Debra's Slaw</title>
+</head>
+<body>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+	<div class="topnav">
+	<a href="index.html">Home</a>
+	<a href="breakfast.html">Breakfast</a>
+	<a href="drinks.html">Drinks</a>
+	<a href="salads.html" class="active">Salads</a>
+	<a href="appetizers.html">Appetizers</a>
+	<a href="entrees.html">Entrees</a>
+	<a href="desserts.html">Desserts</a>
+</div>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<div class="header">
+	<h1>Debra's Slaw</h1>
+</div>
+<br>
+<div class="recipe-container"> 
+	<div class="sidebar"> 
+		<h3>At a Glance</h3> 
+		<div class="info-box"> 
+			<p><b>Serves</b></p> 
+			<p>15</p> 
+		</div> 
+		<div class="info-box"> 
+			<p><b>Cooking time</b></p> 
+			<p>30 minutes</p> 
+		</div> 
+		<div class="info-box"> 
+			<p><b>Preheat oven to</b></p> 
+			<p>N/A</p> 
+		</div> 
+	</div>
+<div class="content">
+	<div class="lists">
+		<p><b>Slaw Ingredients</b></p>
+		<ul>
+			<li>1 lb. cole slaw (<i>bag</i>)</li>
+			<li>2 bags Ramen noodles beef flavor (<i>reserve flavor packets for dressing</i>)</li>
+			<li>1 cup pecans</li>
+			<li>1 cup sunflower seeds</li>
+			<li>2 bunches scallions</li>
+		</ul>
+		<p><b>Dressing Ingredients</b></p>
+		<ul>
+			<li>1/3 cup mazola oil</li>
+			<li>2/3 cup white wine vinegar</li>
+			<li>1/2 cup sugar</li>
+			<li>Ramen noodle beef flavoring</li>
+		</ul>
+		<p><b>Instructions</b></p>
+		<ol>
+			<li>Empty slaw package</li>
+			<li>Crumble ramen noodles and pecans</li>
+			<li>Add sunflower seeds and scallions</li>
+			<li>Mix dressing separately</li>
+			<li>Put dressing on right before serving (<i>otherwise it will get soggy</i>)</li>
+			*Triple the recipe if making for 60 or more
+		</ol>
+	</div>
+</div>
+</div>
+
+</body>
+</html>

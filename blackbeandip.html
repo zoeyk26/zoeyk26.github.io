@@ -15,12 +15,107 @@
   background-size: cover;
   background-position: center;
 }
+.topnav {
+   background-color: #333333;
+   overflow: hidden;
+}
+.topnav {
+   background-color: lightblue;
+   overflow: hidden;
+}
+
+.topnav a {
+   float: left;
+   color: #f2f2f2;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 17px;
+}
+
+.topnav a:hover {
+   background-color: hotpink;
+   color: black;
+}
+
+.topnav a.active {
+   background-color: lightpink;
+   color: #FAF9F6;
+}
+.header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+.lists {
+  width: fit-content;
+  margin: 0 auto;  
+}
+
+.lists ul,
+.lists ol {
+  text-align: left; 
+}
+.recipe-container { 
+	display: flex; 
+	justify-content: center; 
+	gap: 30px; margin: 40px auto; 
+	width: 80%; 
+} 
+.sidebar { 
+	width: 220px; 
+	background-color: lightpink; 
+	padding: 20px; border-radius: 15px; 
+	text-align: center; 
+	box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+} 
+.sidebar h3 { 
+	margin-bottom: 20px; 
+} 
+.info-box { 
+	margin-bottom: 20px; 
+	padding: 10px; 
+	background-color: hotpink; 
+	border-radius: 10px; 
+} 
+.content { 
+	flex: 1; 
+	background-color: lightblue; 
+	padding: 25px; 
+	border-radius: 15px; 
+	box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+} 
+.content ul, 
+.content ol { 
+	padding-left: 20px; 
+} /* mobile */ 
+@media (max-width: 700px) { 
+	.recipe-container { 
+		flex-direction: column; 
+		align-items: center; 
+	} .sidebar { 
+		width: 100%;
+		 } 
+		}
 	</style>
 	<title>Anu and Serena's Black Bean Dip</title>
 </head>
 <body>
-	<h1>Black Bean Dip</h1>
-	<sub>From Anu and Serena!</sub>
+	<div class="topnav">
+	<a href="index.html">Home</a>
+	<a href="breakfast.html">Breakfast</a>
+	<a href="drinks.html">Drinks</a>
+	<a href="salads.html">Salads</a>
+	<a href="appetizers.html" class="active">Appetizers</a>
+	<a href="entrees.html">Entrees</a>
+	<a href="desserts.html">Desserts</a>
+</div>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<div class="header">
+	<h1>Anu and Serena's Black Bean Dip</h1>
+</div>
+
 	<table border=1>
 		<tr>
 			<th>Serves</th>
@@ -48,9 +143,7 @@
 		<li>Bake covered for 20 minutes and uncovered for 20 minutes</li>
 		<li>ENJOY!</li>
 	</ol>
-	<a href="appetizers.html">Appetizers</a>
-	<br>
-	<a href="index.html">Home</a>
+
 
 </body>
 </html>

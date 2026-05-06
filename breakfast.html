@@ -8,16 +8,118 @@
 	h1 {
 		background-color:lightblue;
 	}
+
+	.image {
+  position: relative;
+  width: 200px;
+}
+
+/* Make entire area clickable */
+.image a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.image img {
+  width: 100%;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+/* Overlay tint */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(203, 195, 227, 0.5);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+
+/* Text box */
+.title {
+  background-color: #CBC3E3;
+  color: black;
+  padding: 10px 20px;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 0; /* square corners */
+}
+
+/* Hover effects */
+.image:hover img {
+  opacity: 0.6;
+}
+
+.image:hover .overlay {
+  opacity: 1;
+}
+	.topnav {
+   background-color: #333333;
+   overflow: hidden;
+}
+.topnav {
+   background-color: lightblue;
+   overflow: hidden;
+}
+
+.topnav a {
+   float: left;
+   color: #f2f2f2;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 17px;
+}
+
+.topnav a:hover {
+   background-color: hotpink;
+   color: black;
+}
+
+.topnav a.active {
+   background-color: lightpink;
+   color: #FAF9F6;
+}
+.header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
 </style>
 </head>
 	<title>Breakfast Foods</title>
 <body>
-	<h1>Breakfast Foods</h1>
-	<img src="blueberrypancake.jpeg" alt="Blueberry Pancake"/>
-	<ul>
-		<li><a href="blueberrypancakes.html">Michelle's Blueberry Pancakes</a></li>
-	</ul>
+
+	<div class="topnav">
 	<a href="index.html">Home</a>
+	<a href="breakfast.html" class="active">Breakfast</a>
+	<a href="drinks.html">Drinks</a>
+	<a href="salads.html">Salads</a>
+	<a href="appetizers.html">Appetizers</a>
+	<a href="entrees.html">Entrees</a>
+	<a href="desserts.html">Desserts</a>
+</div>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<div class="header">
+	<h1>Breakfast Foods</h1>
+</div>
+	<div class="image">
+  <a href="blueberrypancakes.html">
+    <img src="blueberrypancake.jpeg" alt="Blueberry Pancake">
+    <div class="overlay">
+      <div class="title">Blueberry<br>Pancakes</div>
+    </div>
+  </a>
+</div>
+	
 
 </body>
 </html>

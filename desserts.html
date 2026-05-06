@@ -8,23 +8,154 @@
 	h1 {
 		background-color:lightblue;
 	}
+	.topnav {
+   background-color: #333333;
+   overflow: hidden;
+}
+.topnav {
+   background-color: lightblue;
+   overflow: hidden;
+}
+
+.topnav a {
+   float: left;
+   color: #f2f2f2;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 17px;
+}
+
+.topnav a:hover {
+   background-color: hotpink;
+   color: black;
+}
+
+.topnav a.active {
+   background-color: lightpink;
+   color: #FAF9F6;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  padding: 3px;
+}
+
+.container div {
+  padding: 10px;
+  margin: 5px;
+}
+.image {
+  position: relative;
+  width: 200px;
+}
+
+/* Make entire area clickable */
+.image a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.image img {
+  width: 100%;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+/* Overlay tint */
+.overlay {
+   position: absolute;
+  inset: 0; /* same as top:0; left:0; right:0; bottom:0 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Text box */
+.title {
+  background-color: #CBC3E3;
+  color: black;
+  padding: 10px 20px;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 0; /* square corners */
+}
+
+/* Hover effects */
+.image:hover img {
+  opacity: 0.6;
+}
+
+.image:hover .overlay {
+  opacity: 1;
+}
+.header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+
 	</style>
 	<title>Desserts</title>
 </head>
 <body>
+	<div class="topnav">
+	<a href="index.html">Home</a>
+	<a href="breakfast.html">Breakfast</a>
+	<a href="drinks.html">Drinks</a>
+	<a href="salads.html">Salads</a>
+	<a href="appetizers.html">Appetizers</a>
+	<a href="entrees.html">Entrees</a>
+	<a href="desserts.html" class="active">Desserts</a>
+</div>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<div class="header">
 	<h1>Desserts</h1>
-<img src="Sweetpotatopie.jpg" alt="Sweet Potato Pie"/>
-<img src="peanutbutterbar.jpeg" alt="Peanut Butter Rice Krispies Bar"/>
-<img src="applepancake.jpeg" alt="Apple Pancake"/>
-<img src="pumpkinbread.jpeg" alt="Pumpkin Bread"/>
-<img src="cranberrycake.jpeg" alt="White Chocolate Cranberry Cake"/>
-<ul>
-	<li><a href="sweetpotatopie.html">Mima's Sweet Potato Pie</a></li>
-	<li><a href="ricekrispybars.html">Marissa's Peanut Butter Rice Krispies Bars</a></li>
-	<li><a href="applepancake.html">Mima's Apple Pancake</a></li>
-	<li><a href="pumpkinbread.html">Donna's Pumpkin Bread</a></li>
-	<li><a href="cake.html">Jocelyn's White Chocolate Cranberry Cake</a></li>
-</ul>
-<a href="index.html">Home</a>
+</div>
+	<div class="container">
+
+  <div class="image">
+    <a href="sweetpotatopie.html">
+      <img src="Sweetpotatopie.jpg" alt="Sweet Potato Pie">
+      <div class="overlay"><div class="title">Sweet<br>Potato Pie</div></div>
+    </a>
+  </div>
+
+  <div class="image">
+    <a href="ricekrispybars.html">
+      <img src="peanutbutterbar.jpeg" alt="Peanut Butter Rice Krispies Bar">
+      <div class="overlay"><div class="title">Peanut<br>Butter<br>Rice<br>Krispies<br>Bar</div></div>
+    </a>
+  </div>
+
+   <div class="image">
+    <a href="applepancake.html">
+      <img src="applepancake.jpeg" alt="Apple Pancake">
+      <div class="overlay"><div class="title">Apple<br>Pancake</div></div>
+    </a>
+  </div>
+
+ <div class="image">
+    <a href="pumpkinbread.html">
+      <img src="pumpkinbread.jpeg" alt="Pumpkin Bread">
+      <div class="overlay"><div class="title">Pumpkin<br>Bread</div></div>
+    </a>
+  </div>
+
+   <div class="image">
+    <a href="cake.html">
+      <img src="cranberrycake.jpeg" alt="White Chocolate Cranberry Cake">
+      <div class="overlay"><div class="title">White<br>Chocolate<br>Cranberry<br>Cake</div></div>
+    </a>
+  </div>
+</div>
+
+
 </body>
 </html>
