@@ -2,71 +2,6 @@
 <html>
 <head>
 <style>
-	body {
-		background-color:#CBC3E3;
-	}
-h1 {
-		background-color:lightblue;
-	}
-
-.image {
-  position: relative;
-  width: 200px;
-}
-
-/* Make entire area clickable */
-.image a {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-}
-
-.image img {
-  width: 100%;
-  display: block;
-  transition: opacity 0.3s ease;
-}
-
-/* Overlay tint */
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(203, 195, 227, 0.5);
-  opacity: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: opacity 0.3s ease;
-}
-
-/* Text box */
-.title {
-  background-color: #CBC3E3;
-  color: black;
-  padding: 10px 20px;
-  font-size: 22px;
-  font-weight: bold;
-  border-radius: 0; /* square corners */
-}
-
-/* Hover effects */
-.image:hover img {
-  opacity: 0.6;
-}
-
-.image:hover .overlay {
-  opacity: 1;
-}
-
-.header h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 42px;
-  letter-spacing: 1px;
-  margin: 10px 0;
-}
 </style>
 	<title>Drinks</title>
 	 <link href="style.css" type="text/css" rel="stylesheet"/>
@@ -83,7 +18,9 @@ h1 {
 </div>
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 <div class="header">
+	<div class="mainHeader">
 	<h1>Drinks</h1>
+</div>
 </div>
 <div class="image">
   <a href="sangria.html">

@@ -19,62 +19,8 @@
   text-align: center; 
 }
 
-.header h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 42px;
-  letter-spacing: 1px;
-  margin: 10px 0;
-}
-.lists {
-  width: fit-content;
-  margin: 0 auto;  
-}
 
-.lists ul,
-.lists ol {
-  text-align: left; 
-}
-.recipe-container { 
-	display: flex; 
-	justify-content: center; 
-	gap: 30px; margin: 40px auto; 
-	width: 80%; 
-} 
-.sidebar { 
-	width: 220px; 
-	background-color: lightpink; 
-	padding: 20px; border-radius: 15px; 
-	text-align: center; 
-	box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
-} 
-.sidebar h3 { 
-	margin-bottom: 20px; 
-} 
-.info-box { 
-	margin-bottom: 20px; 
-	padding: 10px; 
-	background-color: hotpink; 
-	border-radius: 10px; 
-} 
-.content { 
-	flex: 1; 
-	background-color: lightblue; 
-	padding: 25px; 
-	border-radius: 15px; 
-	box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
-} 
-.content ul, 
-.content ol { 
-	padding-left: 20px; 
-} /* mobile */ 
-@media (max-width: 700px) { 
-	.recipe-container { 
-		flex-direction: column; 
-		align-items: center; 
-	} .sidebar { 
-		width: 100%;
-		 } 
-		}
+
 	</style>
 	<title>Israeli Salad</title>
 	 <link href="style.css" type="text/css" rel="stylesheet"/>
@@ -93,7 +39,24 @@
 <div class="header">
 	<h1>Israeli Salad</h1>
 </div>
-
+<div class="recipe-container"> 
+	<div class="sidebar"> 
+		<h3>At a Glance</h3> 
+		<div class="info-box"> 
+			<p><b>Serves</b></p> 
+			<p>4-6</p> 
+		</div> 
+		<div class="info-box"> 
+			<p><b>Cooking time</b></p> 
+			<p>15-25 minutes</p> 
+		</div> 
+		<div class="info-box"> 
+			<p><b>Preheat oven to</b></p> 
+			<p>N/A</p> 
+		</div> 
+	</div>
+	<div class="content">
+	<div class="lists">
 	<p><b>Ingredients</b></p>
 	<ul>
 		<li>1 pound Persian cucumbers, diced</li>
@@ -107,20 +70,15 @@
 <br>
 	<p><b>Instructions</b></p>
 <ol>
-	<img src="Israelisalad1.png"/>
 	<li>Slice the Persian cucumbers in half lengthwise</li>
-	<img src="Israelisalad2.png"/>
 	<li>Slice each half into 4 slices lengthwise, so you have 8 long, thin pieces total</li>
-	<img src="Israelisalad3.png"/>
 	<li>Hold the long, thin pieces together with one hand, and slice the bunch into very small pieces with the other hand</li>
-	<img src="Israelisalad4.png"/>
 	<li>Place the diced cucumbers into a large mixing bowl along with all the other ingredients</li>
-	<img src="Israelisalad5.png"/>
 	<li>Mix until vegetables are well coated with parsely, oil, lemon juice, and salt</li>
-	<img src="Israelisalad6.png"/>
 	<li>Best served fresh at room temperature. You can also serve chilled for a more refreshing salad</li>
 </ol>
-
+</div>
+</div>
 <br>
 </body>
 </html>

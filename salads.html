@@ -2,80 +2,11 @@
 <html>
 <head>
 	<style>
-		body {
-		background-color:#CBC3E3;
-	}
-	.header {
-		background-color:lightblue;
-		font-family:"Arizonia", serif;
-	}
+		
 	
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  justify-items: center;
-  align-items: center;
-  padding: 3px;
-}
 
-.container div {
-  padding: 10px;
-  margin: 5px;
-}
-.image {
-  position: relative;
-  width: 200px;
-}
 
-/* Make entire area clickable */
-.image a {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-}
-
-.image img {
-  width: 100%;
-  display: block;
-  transition: opacity 0.3s ease;
-}
-
-/* Overlay tint */
-.overlay {
-   position: absolute;
-  inset: 0; /* same as top:0; left:0; right:0; bottom:0 */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-/* Text box */
-.title {
-  background-color: #CBC3E3;
-  color: black;
-  padding: 10px 20px;
-  font-size: 22px;
-  font-weight: bold;
-  border-radius: 0; /* square corners */
-}
-
-/* Hover effects */
-.image:hover img {
-  opacity: 0.6;
-}
-
-.image:hover .overlay {
-  opacity: 1;
-}
-.header h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 42px;
-  letter-spacing: 1px;
-  margin: 10px 0;
-}
 
 	</style>
 	<title>Salads</title>
@@ -94,9 +25,10 @@
 	
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 <div class="header">
+	<div class="mainHeader">
 	<h1>Salads</h1>
 </div>
-
+</div>
 <div class="container">
 
   <div class="image">

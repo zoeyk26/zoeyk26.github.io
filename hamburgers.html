@@ -19,62 +19,8 @@
   text-align: center; 
 }
 		
-.header h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 42px;
-  letter-spacing: 1px;
-  margin: 10px 0;
-}
-.lists {
-  width: fit-content;
-  margin: 0 auto;  
-}
 
-.lists ul,
-.lists ol {
-  text-align: left; 
-}
-.recipe-container { 
-	display: flex; 
-	justify-content: center; 
-	gap: 30px; margin: 40px auto; 
-	width: 80%; 
-} 
-.sidebar { 
-	width: 220px; 
-	background-color: lightpink; 
-	padding: 20px; border-radius: 15px; 
-	text-align: center; 
-	box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
-} 
-.sidebar h3 { 
-	margin-bottom: 20px; 
-} 
-.info-box { 
-	margin-bottom: 20px; 
-	padding: 10px; 
-	background-color: hotpink; 
-	border-radius: 10px; 
-} 
-.content { 
-	flex: 1; 
-	background-color: lightblue; 
-	padding: 25px; 
-	border-radius: 15px; 
-	box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
-} 
-.content ul, 
-.content ol { 
-	padding-left: 20px; 
-} /* mobile */ 
-@media (max-width: 700px) { 
-	.recipe-container { 
-		flex-direction: column; 
-		align-items: center; 
-	} .sidebar { 
-		width: 100%;
-		 } 
-		}
+
 	</style>
 	<title>Nana's Hamburgers</title>
 	 <link href="style.css" type="text/css" rel="stylesheet"/>
@@ -98,22 +44,37 @@
 		<h3>At a Glance</h3> 
 		<div class="info-box"> 
 			<p><b>Serves</b></p> 
-			<p>8</p> 
+			<p>4</p> 
 		</div> 
 		<div class="info-box"> 
 			<p><b>Cooking time</b></p> 
-			<p>45-50 minutes</p> 
+			<p>10-15 minutes</p> 
 		</div> 
 		<div class="info-box"> 
 			<p><b>Preheat oven to</b></p> 
-			<p>325°F</p> 
+			<p>325°F (<i>broil</i>)</p> 
 		</div> 
 	</div>
 	<div class="content">
 	<div class="lists">
 		<p><b>Ingredients</b></p>
-		<ul></ul>
+		<ul>
+			<li>1 lb ground beef</li>
+			<li>1 package Lipton onion soup mix</li>
+			<li>2-4 tablespoons BBQ sauce</li>
+			<li>1 egg</li>
+			<li>1/4 bread crumbs</li>
+			<li>4 slices of cheese (<i>American?</i>)</li>
+			<li>4 buns</li>
+		</ul>
 		<p><b>Instructions</b></p>
+		<ol>
+			<li>Heat oven</li>
+			<li>Shape meat and place in oven</li>
+			<li>Broil meat</li>
+			<li>Turn after 7-10 minutes</li>
+			<li>Take out of oven, place on bun and cheese and serve</li>
+		</ol>
 	</div>
 </div>
 </body>

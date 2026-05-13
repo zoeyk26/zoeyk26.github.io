@@ -19,62 +19,8 @@
   text-align: center; 
 }
 
-.header h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 42px;
-  letter-spacing: 1px;
-  margin: 10px 0;
-}
-.lists {
-  width: fit-content;
-  margin: 0 auto;  
-}
 
-.lists ul,
-.lists ol {
-  text-align: left; 
-}
-.recipe-container { 
-	display: flex; 
-	justify-content: center; 
-	gap: 30px; margin: 40px auto; 
-	width: 80%; 
-} 
-.sidebar { 
-	width: 220px; 
-	background-color: lightpink; 
-	padding: 20px; border-radius: 15px; 
-	text-align: center; 
-	box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
-} 
-.sidebar h3 { 
-	margin-bottom: 20px; 
-} 
-.info-box { 
-	margin-bottom: 20px; 
-	padding: 10px; 
-	background-color: hotpink; 
-	border-radius: 10px; 
-} 
-.content { 
-	flex: 1; 
-	background-color: lightblue; 
-	padding: 25px; 
-	border-radius: 15px; 
-	box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
-} 
-.content ul, 
-.content ol { 
-	padding-left: 20px; 
-} /* mobile */ 
-@media (max-width: 700px) { 
-	.recipe-container { 
-		flex-direction: column; 
-		align-items: center; 
-	} .sidebar { 
-		width: 100%;
-		 } 
-		}
+
 	</style>
 	<title>Rachel's Caesar Salad Dressing</title>
 	 <link href="style.css" type="text/css" rel="stylesheet"/>
@@ -93,15 +39,25 @@
 <div class="header">
 	<h1>Rachel's Caesar Salad Dressing</h1>
 </div>
+	<div class="recipe-container"> 
+	<div class="sidebar"> 
+		<h3>At a Glance</h3> 
+		<div class="info-box"> 
+			<p><b>Serves</b></p> 
+			<p>4-6 servings<br>of dressing</p> 
+		</div> 
+		<div class="info-box"> 
+			<p><b>Cooking time</b></p> 
+			<p>5-10 minutes</p> 
+		</div> 
+		<div class="info-box"> 
+			<p><b>Preheat oven to</b></p> 
+			<p>N/A</p> 
+		</div> 
+	</div>
+	<div class="content">
+	<div class="lists">
 	
-	<table border=1>
-		<tr>
-			<th>Serves</th>
-		</tr>
-		<tr>
-			<td><center>idk</center></td>
-		</tr>
-	</table>
 	<p><b>Ingredients</b></p>
 	<ul>
 		<li>1/2 cup olive oil</li>
@@ -119,7 +75,8 @@
 		<li>Mix dressing with a whisk</li>
 		<li>Dress salad and <b>enjoy</b>!!!</li>
 	</ol>
-
+</div>
+</div>
 
 </body>
 </html>
